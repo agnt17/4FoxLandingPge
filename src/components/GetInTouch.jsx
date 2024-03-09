@@ -2,7 +2,7 @@ function GetInTouch() {
   return (
     <>
       <hr className="w-5/6 border-b-4 flex items-center mx-auto mt-10 mb-10" />
-      <div className="flex flex-col gap-10 mt-10 lg:m-1">
+      <div className="flex flex-col gap-10 mt-10 lg:m-1" id="contact">
         <h1 className="text-center text-5xl  font-semibold lg:text-7xl lg:font-bold  text-extrabold">
           GET IN TOUCH
         </h1>
