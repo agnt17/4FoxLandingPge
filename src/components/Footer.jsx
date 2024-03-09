@@ -130,26 +130,33 @@ const Footer = () => {
               size={30}
               className="hover:text-[#ff7f50] hover:cursor-pointer transition-all duration-300 ease-in-out hover:scale-105"
             />
-            <FaInstagram
-              size={30}
-              className="hover:text-[#ff7f50] hover:cursor-pointer transition-all duration-300 ease-in-out hover:scale-105"
-            />
-            <FaTwitter
-              size={30}
-              className="hover:text-[#ff7f50] hover:cursor-pointer transition-all duration-300 ease-in-out hover:scale-105"
-            />
-            <FaYoutube
-              size={30}
-              className="hover:text-[#ff7f50] hover:cursor-pointer transition-all duration-300 ease-in-out hover:scale-105"
-            />
-            <FaEnvelope
-              size={30}
-              className="hover:text-[#ff7f50] hover:cursor-pointer transition-all duration-300 ease-in-out hover:scale-105"
-            />
-            <FaLinkedin
-              size={30}
-              className="hover:text-[#ff7f50] hover:cursor-pointer transition-all duration-300 ease-in-out hover:scale-105"
-            />
+            <a
+              href="https://www.instagram.com/4foxbusiness/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram
+                size={30}
+                className="hover:text-[#ff7f50] hover:cursor-pointer transition-all duration-300 ease-in-out hover:scale-105"
+              />
+            </a>
+
+            <a href={`mailto:info@4foxbusiness.com`}>
+              <FaEnvelope
+                size={30}
+                className="hover:text-[#ff7f50] hover:cursor-pointer transition-all duration-300 ease-in-out hover:scale-105"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/4fox-business-solutions/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin
+                size={30}
+                className="hover:text-[#ff7f50] hover:cursor-pointer transition-all duration-300 ease-in-out hover:scale-105"
+              />
+            </a>
           </div>
 
           <div className="hidden sm:flex bg-gradient-to-r from-orange-600 via-orange-300 to-orange-500 rounded-md w-fit p-4 justify-between gap-6">
