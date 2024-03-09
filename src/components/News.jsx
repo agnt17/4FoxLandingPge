@@ -105,7 +105,7 @@ function News() {
               >
                 <div
                   className={`news-card p-5 mx-auto max-w-sm rounded max-h-80 overflow-y-scroll scrollbar-thin scrollbar-track-transparent shadow-lg ${
-                    index >= currentIndex && index < currentIndex + 2
+                    index >= currentIndex && index < currentIndex + 1
                       ? ""
                       : "hidden"
                   }`}
