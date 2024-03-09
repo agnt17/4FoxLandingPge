@@ -1,6 +1,6 @@
 // News.js
 
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 
 
@@ -12,13 +12,10 @@ function News() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const apiKey = import.meta.env.VITE_APP_NEWS_API_KEY;
-        if (!apiKey) {
-          throw new Error("API key is not defined.");
-        }
 
-        const apiUrl = `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=${apiKey}`;
+        const apiUrl = `https://saurav.tech/NewsAPI/top-headlines/category/business/in.json`;
         const response = await axios.get(apiUrl);
+      
         setArticles(response.data.articles);
       } catch (error) {
         console.error("Error in fetching news:", error.message);
