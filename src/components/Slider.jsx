@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import MenuIcon from '@material-ui/icons/Menu';
-import CloseIcon from '@material-ui/icons/Close';
+import {FiAlignJustify} from "react-icons/fi"
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +23,7 @@ const Sidebar = () => {
   return (
     <>
       <button onClick={(e) => { toggleSidebar(); e.stopPropagation(); }} className=" text-black p-2  rounded-md m-4 fixed right-0">
-        {isOpen ? <CloseIcon /> : <MenuIcon />}
+        {isOpen ? <FiAlignJustify /> : <FiAlignJustify />}
       </button>
       <div ref={sidebarRef} className={`fixed top-0 right-0 h-fit bg-white w-64 flex flex-col justify-between transition-all duration-300 ease-in-out transform ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <div className="p-4">
