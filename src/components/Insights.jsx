@@ -4,8 +4,11 @@ import News from "./News";
 const Insights = () => {
   return (
     <>
-      <div id="tech" className="bg-gray-200 hidden sm:block w-fit p-6 rounded-md m-5">
-        <div className="flex flex-col items-center justify-center text-center mt-10 text-black text-6xl lg:text-6xl font-bold">
+      <div className="bg-gray-200 hidden sm:block w-fit p-6 rounded-md m-5 mx-auto">
+        <div
+          className="flex flex-col items-center justify-center text-center mt-10 text-black text-6xl lg:text-6xl font-bold"
+          id="insights"
+        >
           Latest Insights
         </div>
 

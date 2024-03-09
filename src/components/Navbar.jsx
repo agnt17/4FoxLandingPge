@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <div
-      id="home"
+      id="navbar"
       className="fixed top-0 left-0 right-0 z-50 flex justify-around items-center bg-orange-300 sm:bg-white p-2 sm:p-0"
     >
       <div className="flex items-center sm:hidden">
@@ -44,7 +44,7 @@ const Navbar = () => {
       {showLinks && (
         <div className="hidden sm:flex md:flex gap-12">
           <a
-            href="#hero"
+            href="#home"
             className="hover:scale-110 transition-all ease-in-out duration-300 hover:text-orange-600"
           >
             HOME
@@ -68,7 +68,7 @@ const Navbar = () => {
             SERVICES
           </a>
           <a
-            href="#tech"
+            href="#insights"
             className="hover:scale-110 transition-all ease-in-out duration-300 hover:text-orange-600 "
           >
             INSIGHTS
@@ -77,7 +77,7 @@ const Navbar = () => {
       )}
 
       <button className="hidden sm:block bg-orange-600 text-white py-2 px-6 rounded-sm">
-        CONTACT US
+        <a href="#contact">CONTACT US</a>
       </button>
     </div>
   );
